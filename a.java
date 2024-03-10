@@ -11,7 +11,7 @@ public class ReadJavaFileExample {
             // Prompt the user to input the URL of the repository
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
             System.out.print("URL of the repository: ");
-            String repositoryURL = reader.readLine(); // Read the URL from the user
+            String repositoryURL = reader.readLine(); Read the URL from the user
             
             // Construct the URL for the specific Java file "a.java"
             URL url = new URL(repositoryURL + "/a.java");
@@ -19,7 +19,7 @@ public class ReadJavaFileExample {
             // Open a connection to the URL
             URLConnection connection = url.openConnection();
             
-            // Create a BufferedReader to read from the input stream of the URL connection
+             Create a BufferedReader to read from the input stream of the URL connection
             BufferedReader br = new BufferedReader(new InputStreamReader(connection.getInputStream()));
             
             // Read each line from the file and print it
