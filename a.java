@@ -10,7 +10,7 @@ public class ReadJavaFileExample {
         try {
             // Prompt the user to input the URL of the repository
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-            System.out.print("URL of the repository: ");
+            //System.out.print("URL of the repository: ");
             String repositoryURL = reader.readLine(); Read the URL from the user
             
             // Construct the URL for the specific Java file "a.java"
